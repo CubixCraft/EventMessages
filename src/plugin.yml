@@ -1,0 +1,44 @@
+name: EventMessages
+version: 0.0.0
+description: Register custom messages for events like player join, death, kick, etc.
+author: silvinci
+authors: [silvinci, _baam_, CubixCraft]
+website: https://github.com/CubixCraft/EventMessages
+
+main: com.github.cubixcraft.EventMessages.EventMessages
+
+commands:
+  EventMessages:
+    description: Control your EventMessages.
+    aliases: [em, EventMessage]
+    permission: eventmessages.admin
+    usage: |
+      /<command> reload - Reloads the configuration
+      /<command> set [event] [msg] - Sets the message for the event
+      /<command> set [event] - Removes the message for the event
+      /<command> unset [event] - Removes the message for the event
+  emreload:
+    description: Reloads the configuration
+    permission: eventmessages.reload
+    usage: /<command> - Reloads the configuration
+  emset:
+    description: Reloads the configuration
+    permission: eventmessages.admin
+    usage: /<command> [event] [msg] - Sets the message for the event
+  emunset:
+    description: Removes the message for the event
+    permission: eventmessages.admin
+    usage: /<command> [event] - Removes the message for the event
+
+permissions:
+  eventmessages.*:
+    description: Gives access too all of EventMessages features
+    children:
+    - eventmessages.admin
+    - eventmessages.reload
+  eventmessages.admin:
+    description: Gives access to the ingame configuration of EventMessages
+    default: op
+  eventmessages.reload:
+    description: Allows to reload the configuration of EventMessages
+    default: op
