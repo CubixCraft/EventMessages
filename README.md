@@ -16,9 +16,9 @@ Simply download the `EventMessages.jar` and put it in your `plugins` folder.
 Then reload or restart the server. That's it! EventMessages is up and running,
 you can test it by rejoining your server or issueing the command `/em`.
 
-You can now customize and tweak EventMessages to your likings. See [Configuration](./#configuration).
+You can now customize and tweak EventMessages to your likings. See [Configuration](https://github.com/CubixCraft/EventMessages#configuration).
 
-If `/em` doesn't work, please refer to [Troubleshooting](./#troubleshooting).
+If `/em` doesn't work, please refer to [Troubleshooting](https://github.com/CubixCraft/EventMessages#troubleshooting).
 
 ## Configuration
 There are two ways of configuring EventMessages: The `config.yml` file and the in-game chat console.
@@ -39,10 +39,10 @@ here are all the messages for the specific events defined.
   This string takes the variable `%event`.
 
 #### `messages`
-Please read the [Development Notice](./#development-notice).
+Please read the [Development Notice](https://github.com/CubixCraft/EventMessages#development-notice).
 
 You can listen on virtually every event. They are sorted into heir respective modules,
-so everything stay clean and tidy. For a full list of the standard events, refer to [Events](./events).
+so everything stay clean and tidy. For a full list of the standard events, refer to [Events](https://github.com/CubixCraft/EventMessages#events).
 Custom events are defined via `messages.custom.*`.
 
 #### Example
